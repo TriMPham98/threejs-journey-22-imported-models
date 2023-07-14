@@ -21,6 +21,7 @@ const scene = new THREE.Scene();
 /**
  * Models
  */
+const dracoLoader = new DRACOLoader();
 const gltfLoader = new GLTFLoader();
 
 gltfLoader.load("/models/Duck/glTF-Draco/Duck.gltf", (gltf) => {
