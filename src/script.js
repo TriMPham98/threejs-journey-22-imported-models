@@ -23,7 +23,9 @@ const scene = new THREE.Scene();
 const gltfLoader = new GLTFLoader();
 
 gltfLoader.load("/models/FlightHelmet/glTF/FlightHelmet.gltf", (gltf) => {
-  scene.add(gltf.scene.children[0]);
+  while(gltf.scene.children.length) {
+    scene.add(gltf.scene.children[0]);
+  }
 });
 
 /**
