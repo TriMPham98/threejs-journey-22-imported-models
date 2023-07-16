@@ -28,10 +28,6 @@ const gltfLoader = new GLTFLoader();
 gltfLoader.setDRACOLoader(dracoLoader);
 
 gltfLoader.load("/models/Fox/glTF/Fox.gltf", (gltf) => {
-  // const children = [...gltf.scene.children];
-  // for (const child of children) {
-  //   scene.add(child);
-  // }
 
   gltf.scene.scale.set(0.025, 0.025, 0.025);
   scene.add(gltf.scene);
