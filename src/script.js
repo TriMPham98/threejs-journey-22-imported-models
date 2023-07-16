@@ -33,6 +33,7 @@ gltfLoader.load("/models/Fox/glTF/Fox.gltf", (gltf) => {
   //   scene.add(child);
   // }
 
+  gltf.scene.scale.set(0.025, 0.025, 0.025);
   scene.add(gltf.scene);
 });
 
