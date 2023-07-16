@@ -31,7 +31,7 @@ let mixer = null;
 
 gltfLoader.load("/models/Fox/glTF/Fox.gltf", (gltf) => {
   mixer = new THREE.AnimationMixer(gltf.scene);
-  const action = mixer.clipAction(gltf.animations[0]);
+  const action = mixer.clipAction(gltf.animations[1]);
 
   action.play();
 
